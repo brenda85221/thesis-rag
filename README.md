@@ -21,3 +21,9 @@ OPENAI_API_KEY=sk-你的key
 python thesis_qa.py
 
 4. 開始你的問答^^
+
+## 實際操作範例
+<img width="697" height="352" alt="image" src="https://github.com/user-attachments/assets/149b9bbf-61a0-4b1d-9cf8-859db149215a" />
+<img width="658" height="174" alt="image" src="https://github.com/user-attachments/assets/3ff4fef7-ad01-4e1d-99ee-023d5b948729" />
+<img width="734" height="305" alt="image" src="https://github.com/user-attachments/assets/1eaabfbb-ea61-4f05-90ce-fbcb894d95c5" />
+
