@@ -1,0 +1,12 @@
+.env
+thesis.pdf
+
+thesis_index/
+venv/
+
+__pycache__/
+*.pyc
+*.pyo
+
+.vscode/
+.DS_Store
