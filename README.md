@@ -9,6 +9,12 @@ RAG 架構，將學術論文 PDF 轉為可查詢的 AI 問答系統。
 5. 檢索 ： cosine similarity，取 top-4 相關段落
 6. 回答生成：`GPT-4o-mini` + Custom Prompt，回傳答案與來源頁碼
 
+## 對話記憶（新增）
+支援上下文連續追問，無需重複說明前文脈絡。
+
+運作流程：
+使用者輸入（可含指代）-> Query Rewriting — LLM 將問題展開為完整查詢 -> 向量檢索（使用改寫後的查詢）-> LLM 回答（同時參考：對話歷史 + 論文段落）-> 更新對話歷史
+
 ## 如何開始?
 
 1. 安裝套件與設定相關環境
@@ -26,4 +32,8 @@ python thesis_qa.py
 <img width="697" height="352" alt="image" src="https://github.com/user-attachments/assets/149b9bbf-61a0-4b1d-9cf8-859db149215a" />
 <img width="658" height="174" alt="image" src="https://github.com/user-attachments/assets/3ff4fef7-ad01-4e1d-99ee-023d5b948729" />
 <img width="734" height="305" alt="image" src="https://github.com/user-attachments/assets/1eaabfbb-ea61-4f05-90ce-fbcb894d95c5" />
+
+### 對話記憶（新增）
+<img width="641" height="421" alt="螢幕擷取畫面 2026-04-14 142838" src="https://github.com/user-attachments/assets/13f3daba-492e-450c-b64f-c2190a64279e" />
+
 
